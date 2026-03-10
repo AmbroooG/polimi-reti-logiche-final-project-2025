@@ -2,7 +2,7 @@
 
 **Final Grade: 30/30 cum laude**
 
-This is a VHDL hardware module designed for differential filtering. It was developed as the final project for the Reti Logiche (Logic Networks) course at Politecnico di Milano.
+This is a VHDL hardware module designed for differential filtering. It was developed as the final project for the Reti Logiche course at Politecnico di Milano.
 
 ## Functionality
 The module reads data from an external memory, applies a filter, and writes the results back. It uses a Finite State Machine (FSM) to coordinate all operations synchronously.
