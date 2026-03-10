@@ -1,32 +1,34 @@
 # Polimi Reti Logiche Final Project 2024-2025
 
-[cite_start]This is a VHDL hardware module designed for differential filtering[cite: 17]. [cite_start]It was developed as the final project for the Reti Logiche (Logic Networks) course at Politecnico di Milano[cite: 17].
+**Final Grade: 30/30 cum laude**
 
-## How it works
-[cite_start]The module reads data from an external memory, applies a filter, and writes the results back[cite: 19]. [cite_start]It uses a Finite State Machine (FSM) to coordinate everything synchronously [cite: 94-95].
+This is a VHDL hardware module designed for differential filtering. It was developed as the final project for the Reti Logiche (Logic Networks) course at Politecnico di Milano.
+
+## Functionality
+The module reads data from an external memory, applies a filter, and writes the results back. It uses a Finite State Machine (FSM) to coordinate all operations synchronously.
 
 Key features:
-* [cite_start]Supports both 3rd-order and 5th-order differential filters [cite: 28-31].
-* [cite_start]Uses bit-shifts for division to keep the hardware simple and fast [cite: 51-52].
-* [cite_start]Output is automatically saturated to the signed 8-bit range of -128 to +127[cite: 22, 136].
+* Supports both 3rd-order and 5th-order differential filters.
+* Uses bit-shifts for division instead of complex dividers to save hardware resources.
+* Output is automatically saturated to the signed 8-bit range (-128 to +127).
 
-## Technical Details
-[cite_start]The design was synthesized for a Xilinx Artix-7 FPGA using Vivado[cite: 416].
+## Technical Specifications
+The design was synthesized for a Xilinx Artix-7 FPGA using Vivado.
 
-* [cite_start]**Clock:** 50 MHz (20ns period)[cite: 424].
-* [cite_start]**Timing:** The design is efficient, with a positive slack of nearly 14ns[cite: 424, 429].
-* [cite_start]**Resources:** It uses very few resources—less than 1% of the total LUTs and Registers on the target chip[cite: 422].
+* **Clock:** 50 MHz (20ns period).
+* **Timing:** The design is efficient, with a positive slack of 13.985 ns.
+* **Resources:** Uses less than 1% of the total LUTs and Registers on the target chip.
 
 ### Hardware Utilization
 | Resource | Count | % Used |
 | :--- | :--- | :--- |
-| LUTs | 1156 | [cite_start]0.86% [cite: 422] |
-| Registers | 228 | [cite_start]0.08% [cite: 422] |
-| DSP/BRAM | 0 | [cite_start]0.00% [cite: 422] |
+| LUTs | 1156 | 0.86% |
+| Registers | 228 | 0.08% |
+| DSP/BRAM | 0 | 0.00% |
 
 ## Author
-* [cite_start]**Ambrogio Gao** (Matricola 214428) [cite: 6-7]
-* [cite_start]Ingegneria Informatica, Politecnico di Milano [cite: 8]
+* **Ambrogio Gao**
+* Ingegneria Informatica, Politecnico di Milano
 
 ## License
 Licensed under the MIT License.
